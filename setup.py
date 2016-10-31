@@ -18,7 +18,7 @@ docs_require = [
 
 tests_require = [
     'freezegun==0.3.7',
-    'mock==2.0.0',
+    'mock==2.0.0.singular',
     'pretend==1.0.8',
     'pytest-cov==2.3.1',
     'pytest==3.0.2',
