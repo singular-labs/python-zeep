@@ -20,6 +20,8 @@ def as_qname(value, nsmap, target_namespace):
     if ':' in value:
         prefix, local = value.split(':')
         namespace = nsmap.get(prefix, prefix)
+        if local == 'bool':
+            local = 'boolean'
         return etree.QName(namespace, local)
 
     if target_namespace:
